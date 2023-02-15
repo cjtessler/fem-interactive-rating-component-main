@@ -48,12 +48,30 @@ button:hover {
   color: var(--orange);
 }
 
+.circled {
+  background-color: var(--background-grey);
+  color: var(---grey);
+  width: 1rem;
+  height: 1rem;
+  padding: .75rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .clickable {
   cursor: pointer;
 }
 
 .clickable:hover {
+  z-index: 1;
   background-color: var(--light-grey);
+  color: white;
+}
+
+.selected {
+  background-color: var(--orange);
   color: white;
 }
 
@@ -83,17 +101,6 @@ button:hover {
   font-weight: 400;
 }
 
-.circled {
-  background-color: var(--background-grey);
-  color: var(---grey);
-  width: 1rem;
-  height: 1rem;
-  padding: .75rem;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 /* Footer */
 footer {
